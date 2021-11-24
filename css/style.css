@@ -1,0 +1,79 @@
+body {
+    width: 1140px;
+    margin: auto;
+}
+
+p {
+    line-height: 1.5;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-nav a {
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #2E4C6D;
+    transition: 0.5s;
+}
+
+.header-nav a:hover {
+    background: #2E4C6D;
+    color: #fff;
+}
+
+.hero {
+    height: 600px;
+    background: url('https://images.unsplash.com/photo-1450297166380-cabe503887e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1165&q=80');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero::after {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+}
+
+.hero * {
+    z-index: 1;
+    color: #fff;
+}
+
+.three-col {
+    display: flex;
+    gap: 20px;
+}
+
+.two-col {
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    gap: 20px;
+}
+
+.two-col img {
+    width: 50%;
+    object-fit: cover;
+}
+
+footer {
+    background: #222;
+    color: #fff;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+}
